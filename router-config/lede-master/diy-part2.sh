@@ -12,6 +12,8 @@ svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passw
 # Modify default theme（FROM uci-theme-bootstrap CHANGE TO luci-theme-material）
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' ./feeds/luci/collections/luci/Makefile
 
+# Add luci-app-ssr-plus
+# git clone https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/openwrt-ssrplus
 
 # Add luci-app-openclash
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/openwrt-openclash
